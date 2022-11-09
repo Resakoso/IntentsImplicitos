@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="422dp"
+        android:layout_height="268dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nuevo_edificio_3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Centro Sagrado Corazón Logroño"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/BtnWeb"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Ir a la Web"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/BtnUbi"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:text="Mostrar en el mapa"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/BtnWeb"
+        app:layout_constraintTop_toBottomOf="@+id/BtnWeb" />
+
+    <Button
+        android:id="@+id/BtnMail"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar correo"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/BtnUbi"
+        app:layout_constraintTop_toBottomOf="@+id/BtnUbi" />
+
+    <Button
+        android:id="@+id/BtnTelf"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:text="Llamar"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/BtnMail"
+        app:layout_constraintTop_toBottomOf="@+id/BtnMail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
